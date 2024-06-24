@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 
-sakit_jantung = pickle.load(open('sakit_jantung.sav', 'wb'))
+#sakit_jantung = pickle.load(open('sakit_jantung.sav', 'wb'))
 
 st.title('chance orang idup pas kena jantung(yes/no)')
 age = st.text_input ('umur anda: ')
@@ -11,12 +11,12 @@ diabetes = st.text_input ('kandungan diabetes anda: ')
 
 diagnosis = ''
 
-if st.button ('gacha kematian '):
-  diagnosis_pred = sakit_jantung.predict([[age, anemia, ceratine_phosphokinase, diabetes]])
+#if st.button ('gacha kematian '):
+ # diagnosis_pred = sakit_jantung.predict([[age, anemia, ceratine_phosphokinase, diabetes]])
 
-  if (diagnosis_pred[0] == 1):
-    diagnosis = 'pasien meninggal'
-  else:
-    diagnosis = 'pasien hidup'
+  #if (diagnosis_pred[0] == 1):
+    #diagnosis = 'pasien meninggal'
+  #else:
+   # diagnosis = 'pasien hidup'
 
-  st.success(diagnosis)
+  #st.success(diagnosis)
