@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 
-sakit_jantung = pickle.load(open('sakit_jantung.sav', 'rb'))
+sakit_jantung = pickle.load(open('sakit_jantung.sav', 'wb'))
 
 st.title('chance orang idup pas kena jantung(yes/no)')
 age = st.text_input ('umur anda: ')
