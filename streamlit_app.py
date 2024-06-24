@@ -11,7 +11,7 @@ diabetes = st.text_input ('kandungan diabetes anda: ')
 
 diagnosis = ''
 
-if st.button ('gacha kematian: ')
+if st.button ('gacha kematian ')
 diagnosis_pred = sakit_jantung.predict([[age, anemia, ceratine_phosphokinase, diabetes]])
 
   if (diagnosis_pred[0] == 1):
