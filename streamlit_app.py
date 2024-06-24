@@ -1,4 +1,4 @@
-import stream as st
+import streamlit as st
 
 st.title('chance orang idup pas kena jantung(yes/no)')
 umur = st.text_input ('umur anda: ')
