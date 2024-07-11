@@ -1,2 +1,0 @@
-# dimmm
-tugas
